@@ -55,4 +55,4 @@ for key in detailed_result.keys():
 # Огонь просто!! -> positive
 # ...
 ```
- https://github.com/lizatukhtina/vk_sentiment.git
+ https://github.com/lizatukhtina/vksentiment.git
