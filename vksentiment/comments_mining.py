@@ -49,10 +49,10 @@ class CommentsMiner:
         offset = 5
 
         while 1:
-            # получаем 100 постов
             # vk api позволяет получать за раз не более 100 постов
+            # получение 100 постов
             posts_list = self.vk.wall.get(owner_id=group_id,count=100, offset=offset)
-            # в цикле извлекаем комментарии из каждого поста
+            # извлечение комментариев для каждого поста
             for post in posts_list['items']:
                     post_id = str(post['id'])
                     comments_list = self.vk.wall.getComments(owner_id=group_id,
